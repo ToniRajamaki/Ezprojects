@@ -8,10 +8,10 @@ const data = [
   {
     id: 0,
     image: "https://i.imgur.com/92k0SoD.jpg",
-    name: "Tours",
-    info: "An application that displays a set of tours from an API.",
+    name: "Expanding Cards",
+    info: "An application that showcases some fancy card animation.",
     bColor: "#fff",
-    linkTo: "tours",
+    linkTo: "expanding-cards",
   },
 
   {

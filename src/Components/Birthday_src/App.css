@@ -1,0 +1,41 @@
+.bsection {
+  width: unset !important;
+}
+.dp {
+  width: 85px;
+  border-radius: 50%;
+}
+.name {
+  margin-bottom: 0;
+}
+
+.age {
+  left: 10px;
+}
+.btnb,
+.btnb:hover,
+.btnb:active,
+.btnb:focus {
+  background-color: #f28ab2;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+
+.brow {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 2em 0em;
+}
+.bcontainer {
+  width: 35%;
+  letter-spacing: 0.1rem;
+  padding: 2em;
+  margin: 5em auto;
+  border-radius: 0.25rem;
+  background-color: whitesmoke;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}

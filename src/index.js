@@ -1,60 +1,28 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import App from "./App";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-import Sum from "./add-sub";
-import Bye from "./bye";
-import Size from "./grow-shrink";
-import Hide from "./hide";
-import Align from "./align";
-import CurTime from "./currentTime";
-import Color from "./color";
-import RandomColor from "./random-color";
-import HexCounter from "./hex-counter";
+import Tours from "./Components/Tours_src/Tours";
+import Restaurant from "./Components/Restaurant_src/Restaurant";
+import Birthday from "./Components/Birthday_src/Birthday";
+import Footer from "./Components/Footer";
 
-import Navbar from "./navbar";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      {/* Everything in the app should be under the Browser Router. hence placed Backbtn under this*/}
 
-import Home from "./home";
-import "./styles/styles.scss";
-
-const Routes = {
-  "/": () => <Home />,
-  "/add-sub": () => <Sum />,
-  "/bye": () => <Bye />,
-  "/grow-shrink": () => <Size />,
-  "/hide": () => <Hide />,
-  "/align": () => <Align />,
-  "/currentTime": () => <CurTime />,
-  "/color": () => <Color />,
-  "/random-color": () => <RandomColor />,
-  "/hex-counter": () => <HexCounter />
-};
-
-const App = () => {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <div className="content">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/add-sub" component={Sum} />
-            <Route path="/bye" component={Bye} />
-            <Route path="/grow-shrink" component={Size} />
-            <Route path="/hide" component={Hide} />
-            <Route path="/align" component={Align} />
-            <Route path="/currentTime" component={CurTime} />
-            <Route path="/color" component={Color} />
-            <Route path="/random-color" component={RandomColor} />
-            <Route path="/hex-counter" component={HexCounter} />
-          </Switch>
-        </div>
-      </BrowserRouter>
-    </div>
-  );
-};
-
-export default Routes;
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route exact path="/tours" element={<Tours />} />
+        <Route exact path="/restaurant" element={<Restaurant />} />
+        <Route exact path="/birthday" element={<Birthday />} />
+        <Route exact path="*" element={<App />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  </React.StrictMode>
+);

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  font-family: 'Roboto', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.backbutton{
+  padding: 5;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.project-title{
+  top: 0;
+  margin: 10px;
+  position: absolute;
+}

@@ -34,7 +34,8 @@ function ExpandingCards() {
       <br></br>
       <div className='project'>
         <h1 className='project-title'>Expanding Cards</h1>
-        <br /><br />
+        <br />
+        <br />
         <div className='container'>
           <div
             className='panel active'

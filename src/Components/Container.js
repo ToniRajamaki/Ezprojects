@@ -16,7 +16,7 @@ const data = [
 
   {
     id: 1,
-    image: 'https://i.imgur.com/2OyS6oZ.png',
+    image: 'https://i.imgur.com/yHiOeyg.png',
     name: 'Progress Steps',
     info: 'Visually pleasing animated progress steps',
     bColor: '#fff',

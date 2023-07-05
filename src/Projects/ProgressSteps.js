@@ -3,14 +3,55 @@ import BackButton from '../BackButton'
 import './Styles/ProgressSteps.css'
 
 function ProgressSteps() {
-  const progress = document.getElementById('progress')
-  const prev = document.getElementById('prev')
-  const next = document.getElementById('next')
-  const circles = document.querySelectorAll('.circle')
+  const [currentActive, setCurrentActive] = useState(1)
 
-  const handlePanelClick = () => {
-    console.log('asd')
+  function updateProgress() {
+    const circles = document.querySelectorAll('.circle')
+    circles.forEach((circle, idx) => {
+      if (idx < currentActive) {
+        circle.classList.add('active')
+      } else {
+        circle.classList.remove('active')
+      }
+    })
+
+    const actives = document.querySelectorAll('.active')
+
+    const progress = ((actives.length - 1) / (circles.length - 1)) * 100 + '%'
+    const progressBar = document.getElementById('progress')
+    progressBar.style.width = progress
+
+    const prev = document.getElementById('prev')
+    const next = document.getElementById('next')
+
+    if (currentActive === 1) {
+      prev.disabled = true
+    } else {
+      prev.disabled = false
+    }
+
+    if (currentActive === circles.length) {
+      next.disabled = true
+    } else {
+      next.disabled = false
+    }
   }
+
+  const handlePrev = () => {
+    if (currentActive > 1) {
+      setCurrentActive((prevActive) => prevActive - 1)
+    }
+  }
+
+  const handleNext = () => {
+    if (currentActive < 4) {
+      setCurrentActive((prevActive) => prevActive + 1)
+    }
+  }
+
+  useEffect(() => {
+    updateProgress()
+  }, [currentActive])
 
   return (
     <>
@@ -33,14 +74,14 @@ function ProgressSteps() {
           <button
             className='btn2'
             id='prev'
-            disabled
+            onClick={handlePrev}
           >
             Prev
           </button>
           <button
             className='btn2'
             id='next'
-            onClick={handlePanelClick}
+            onClick={handleNext}
           >
             Next
           </button>

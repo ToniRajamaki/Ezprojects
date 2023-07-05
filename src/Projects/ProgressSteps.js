@@ -10,10 +10,9 @@ function ProgressSteps() {
     <>
       <BackButton />
       <br></br>
-      <div className='project'>
+      <div className='project2'>
         <h1 className='project-title'>Progress Steps</h1>
-        <body>
-    <div class="container3">
+        <div class="container3">
       <div class="progress-container">
         <div class="progress" id="progress"></div>
         <div class="circle active">1</div>
@@ -25,7 +24,6 @@ function ProgressSteps() {
       <button class="btn" id="prev" disabled>Prev</button>
       <button class="btn" id="next">Next</button>
     </div>
-  </body>
       </div>
     </>
   )

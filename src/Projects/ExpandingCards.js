@@ -31,8 +31,10 @@ function ExpandingCards() {
   return (
     <>
       <BackButton />
+      <br></br>
       <div className='project'>
         <h1 className='project-title'>Expanding Cards</h1>
+        <br /><br />
         <div className='container'>
           <div
             className='panel active'

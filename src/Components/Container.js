@@ -17,10 +17,10 @@ const data = [
   {
     id: 1,
     image: 'https://i.imgur.com/2OyS6oZ.png',
-    name: 'Restaurant',
-    info: 'A simple menu that could be used to display items that a place offers.  ',
-    bColor: '#e6dcd2',
-    linkTo: 'restaurant',
+    name: 'Progress Steps',
+    info: 'Visually pleasing animated progress steps',
+    bColor: '#fff',
+    linkTo: 'progress-steps',
   },
   {
     id: 2,

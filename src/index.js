@@ -5,9 +5,9 @@ import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 
 import Tours from './Components/Tours_src/Tours'
-import Restaurant from './Components/Restaurant_src/Restaurant'
 import Birthday from './Components/Birthday_src/Birthday'
 import ExpandingCards from './Projects/ExpandingCards'
+import ProgressSteps from './Projects/ProgressSteps'
 // import Footer from "./Components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -29,8 +29,8 @@ root.render(
         />
         <Route
           exact
-          path='/restaurant'
-          element={<Restaurant />}
+          path='/progress-steps'
+          element={<ProgressSteps />}
         />
         <Route
           exact

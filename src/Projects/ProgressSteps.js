@@ -3,9 +3,14 @@ import BackButton from '../BackButton'
 import './Styles/ProgressSteps.css'
 
 function ProgressSteps() {
-  useEffect(() => {
-    console.log('asdasdasdasdsadasd')
-  }, [])
+  const progress = document.getElementById('progress')
+  const prev = document.getElementById('prev')
+  const next = document.getElementById('next')
+  const circles = document.querySelectorAll('.circle')
+
+  const handlePanelClick = () => {
+    console.log('asd')
+  }
 
   return (
     <>
@@ -35,6 +40,7 @@ function ProgressSteps() {
           <button
             className='btn2'
             id='next'
+            onClick={handlePanelClick}
           >
             Next
           </button>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const data = [
   {
     id: 0,
-    image: 'https://i.imgur.com/92k0SoD.jpg',
+    image: 'https://i.imgur.com/q8xTORS.png',
     name: 'Expanding Cards',
     info: 'An application that showcases some fancy card animation.',
     bColor: '#fff',
@@ -54,7 +54,7 @@ export default function Container() {
         </h1>
         <h4 className='mainHeading '>that are based on react...(obviously) </h4>
       </div>
-      <div className='dContainer container'>
+      <div className='dContainer container2'>
         <div className='row row-cols-3 mt-10 mx-3 '>
           {data.map((cProject) => {
             const { id, image, info, linkTo, bColor, name } = cProject

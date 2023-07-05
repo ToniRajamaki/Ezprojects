@@ -1,31 +1,47 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import BackButton from '../BackButton'
 import './Styles/ProgressSteps.css'
 
 function ProgressSteps() {
- 
+  useEffect(() => {
+    console.log('asdasdasdasdsadasd')
+  }, [])
 
-  
   return (
     <>
       <BackButton />
-      <br></br>
+      <br />
       <div className='project2'>
         <h1 className='project-title'>Progress Steps</h1>
-        <div class="container3">
-      <div class="progress-container">
-        <div class="progress" id="progress"></div>
-        <div class="circle active">1</div>
-        <div class="circle">2</div>
-        <div class="circle">3</div>
-        <div class="circle">4</div>
-      </div>
+        <div className='container3'>
+          <div className='progress-container'>
+            <div
+              className='progress'
+              id='progress'
+            ></div>
+            <div className='circle active'>1</div>
+            <div className='circle'>2</div>
+            <div className='circle'>3</div>
+            <div className='circle'>4</div>
+          </div>
 
-      <button class="btn" id="prev" disabled>Prev</button>
-      <button class="btn" id="next">Next</button>
-    </div>
+          <button
+            className='btn2'
+            id='prev'
+            disabled
+          >
+            Prev
+          </button>
+          <button
+            className='btn2'
+            id='next'
+          >
+            Next
+          </button>
+        </div>
       </div>
     </>
   )
 }
+
 export default ProgressSteps

@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #f6f7fb;
+  background-color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
   /* flex-direction: column; */
@@ -100,7 +100,7 @@ body {
   border-color: var(--line-border-fill)
 }
 
-.btn{
+.btn2{
   background-color: var(--line-border-fill);
   color: #fff;
   border-radius: 6px;

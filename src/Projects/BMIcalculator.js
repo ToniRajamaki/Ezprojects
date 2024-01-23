@@ -19,23 +19,24 @@ function BMIcalculator() {
 
         if (bmi < 18.5) {
             category = 'Underweight';
-            color = 'yellow';
+            color = '#d2b55b'; // Darker yellow
         } else if (bmi >= 18.5 && bmi < 25) {
             category = 'Healthy Weight';
-            color = 'green';
+            color = '#4caf50'; // Bright green
         } else if (bmi >= 25 && bmi < 30) {
             category = 'Overweight';
-            color = '#a3c644'; // Lighter green
+            color = '#6db65b'; // Darker green
         } else if (bmi >= 30 && bmi < 35) {
             category = 'Class 1 Obesity';
-            color = '#f7ea00'; // Yellow-green
+            color = '#9acd32'; // Yellow-green, leaning green
         } else if (bmi >= 35 && bmi < 40) {
             category = 'Class 2 Obesity';
-            color = '#ff9900'; // Orange
+            color = '#ff8c00'; // Bright orange
         } else {
             category = 'Class 3 Obesity';
-            color = 'red';
+            color = '#ff4500'; // Bright red
         }
+        
 
         setBMICategory(category);
         setBMIColor(color);
@@ -46,7 +47,7 @@ function BMIcalculator() {
             <BackButton />
             <div className='bmi-window'>
                 <div className='bmi-title'>
-                    <h1>BMI Calculator</h1>
+                    <h1>Body mass index Calculator</h1>
                 </div>
                 <div className='sliders'>
                     <label className='slider-title' htmlFor='height'>
@@ -73,11 +74,11 @@ function BMIcalculator() {
                         id='weight'></input>
                 </div>
 
-                <div className='bmi-result' style={{ color: bmiColor }}>
+                <div className='bmi-result' >
                     <h1>
                         Your BMI is: {(weight / ((height / 100) ** 2)).toFixed(2)}
                     </h1>
-                    <h1>You are {BMICategory}</h1>
+                    <h1 style={{ color: bmiColor }}>{BMICategory}</h1>
                 </div>
             </div>
         </div>

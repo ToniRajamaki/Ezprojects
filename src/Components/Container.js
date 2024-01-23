@@ -9,47 +9,45 @@ const data = [
     id: 0,
     image: 'https://i.imgur.com/q8xTORS.png',
     name: 'Expanding Cards',
-    info: 'An application that showcases some fancy card animation.',
+    info: 'Interactive cards that expand on click, showcasing elegant animations.',
     bColor: '#fff',
     linkTo: 'expanding-cards',
   },
-
   {
     id: 1,
     image: 'https://i.imgur.com/yHiOeyg.png',
     name: 'Progress Steps',
-    info: 'Visually pleasing animated progress steps',
+    info: 'Dynamic progress steps indicator with smooth transitions.',
     bColor: '#fff',
     linkTo: 'progress-steps',
   },
-
   {
     id: 2,
-    image: 'https://i.imgur.com/6XALxvvm.jpg',
-    name: 'fancy-counter',
-    info: 'A simple application that displays a set of birthdays from an API. ',
+    image: 'https://i.imgur.com/MLBvPub.gif',
+    name: 'Fancy Counter',
+    info: 'A counter with buttons to increment, decrement, and reset, featuring sleek design.',
     bColor: '#fff',
     linkTo: 'fancy-counter',
   },
   {
     id: 3,
-    image:
-      'https://i.imgur.com/K934cZu.png',
-    name: 'IntrestCalculator',
-    info: 'A simple application that displays a set of birthdays from an API. ',
+    image: 'https://i.imgur.com/Qrv5g46.gif',
+    name: 'Interest Calculator',
+    info: 'A tool for calculating interest with various compounding options.',
     bColor: '#fff',
     linkTo: 'intrest-calculator',
   },
   {
     id: 4,
-    image:
-      'https://i.imgur.com/S6hyllm.gif',
+    image: 'https://i.imgur.com/DxQtSMG.gif',
     name: 'BMI Calculator',
-    info: 'A simple application that displays a set of birthdays from an API. ',
+    info: 'An intuitive BMI calculator with visual indicators for different health categories.',
     bColor: '#fff',
     linkTo: 'bmi-calculator',
   },
-]
+];
+
+
 export default function Container() {
   const backgroundSet = (bColor) => {
     document.querySelector('#root').style.backgroundColor = `${bColor}`

@@ -34,7 +34,7 @@ const data = [
   {
     id: 3,
     image:
-      'https://www.greatfrontend.com/img/questions/mortgage-calculator/google-mortgage-calculator-example.png',
+      'https://i.imgur.com/K934cZu.png',
     name: 'IntrestCalculator',
     info: 'A simple application that displays a set of birthdays from an API. ',
     bColor: '#fff',

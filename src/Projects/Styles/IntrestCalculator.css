@@ -2,11 +2,16 @@
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    color: #fff;
+    padding: 5px;
+    padding-bottom: -5px;
 }
 
 .country{
     margin-bottom: 1rem;
     font-style: italic;
+    color:lightgray;
+    padding: 5px;
 }
 .userInput{
     display: flex;
@@ -16,15 +21,21 @@
 }
 
 .result-digit{
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    display: flex;
+    
 }
 .calcInput{
     border: 1px solid #ccc !important;
     text-align: right; /* Added to align calcInput to the right */
 }
 
+.calcInput::before{
+    content:"$";
+    font-size: 0.8rem; /* Adjust this value as needed */
+}
 .reset-button{
     margin-top: 1rem;
     padding: 0.5rem 1rem;
@@ -33,4 +44,29 @@
     background-color: #fff;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+}
+.calc-title{
+    background-color: slateblue;
+}
+
+.calculator-results-container{
+    display: flex;
+    gap: 4rem;
+    border:#ccc 1px solid;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.calc-results{
+    padding-top: 30px;
+    border-left: #ccc 1px solid;
+    padding-left: 30px;
+}
+
+.loan-term{
+    font-weight: 600;
+}
+
+.calc-window{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

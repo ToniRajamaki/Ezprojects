@@ -22,13 +22,14 @@ const data = [
     bColor: '#fff',
     linkTo: 'progress-steps',
   },
+  
   {
     id: 2,
-    image: 'https://i.imgur.com/CBKXK6G.jpg',
-    name: 'Birthday',
+    image: 'https://i.imgur.com/6XALxvvm.jpg',
+    name: 'fancy-counter',
     info: 'A simple application that displays a set of birthdays from an API. ',
-    bColor: '#f28ab2',
-    linkTo: 'birthday',
+    bColor: '#fff',
+    linkTo: 'fancy-counter',
   },
 ]
 export default function Container() {

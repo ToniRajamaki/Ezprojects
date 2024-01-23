@@ -8,6 +8,7 @@ import Tours from './Components/Tours_src/Tours'
 import Birthday from './Components/Birthday_src/Birthday'
 import ExpandingCards from './Projects/ExpandingCards'
 import ProgressSteps from './Projects/ProgressSteps'
+import FancyCounter from './Projects/FancyCounter'
 // import Footer from "./Components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -32,15 +33,17 @@ root.render(
           path='/progress-steps'
           element={<ProgressSteps />}
         />
-        <Route
-          exact
-          path='/birthday'
-          element={<Birthday />}
-        />
+        
         <Route
           exact
           path='/expanding-cards'
           element={<ExpandingCards />}
+        />
+        <Route
+    
+          exact
+          path='/fancy-counter'
+          element={<FancyCounter />}
         />
         <Route
           exact

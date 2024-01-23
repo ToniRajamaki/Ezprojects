@@ -9,6 +9,7 @@ import Birthday from './Components/Birthday_src/Birthday'
 import ExpandingCards from './Projects/ExpandingCards'
 import ProgressSteps from './Projects/ProgressSteps'
 import FancyCounter from './Projects/FancyCounter'
+import IntrestCalculator from './Projects/IntrestCalculator'
 // import Footer from "./Components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -18,38 +19,18 @@ root.render(
       {/* Everything in the app should be under the Browser Router. hence placed Backbtn under this*/}
 
       <Routes>
+        <Route exact path='/' element={<App />} />
+        <Route exact path='/tours' element={<Tours />} />
+        <Route exact path='/progress-steps' element={<ProgressSteps />} />
+
+        <Route exact path='/expanding-cards' element={<ExpandingCards />} />
+        <Route exact path='/fancy-counter' element={<FancyCounter />} />
         <Route
           exact
-          path='/'
-          element={<App />}
+          path='/intrest-calculator'
+          element={<IntrestCalculator />}
         />
-        <Route
-          exact
-          path='/tours'
-          element={<Tours />}
-        />
-        <Route
-          exact
-          path='/progress-steps'
-          element={<ProgressSteps />}
-        />
-        
-        <Route
-          exact
-          path='/expanding-cards'
-          element={<ExpandingCards />}
-        />
-        <Route
-    
-          exact
-          path='/fancy-counter'
-          element={<FancyCounter />}
-        />
-        <Route
-          exact
-          path='*'
-          element={<App />}
-        />
+        <Route exact path='*' element={<App />} />
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>

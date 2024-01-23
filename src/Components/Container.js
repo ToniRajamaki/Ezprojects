@@ -22,7 +22,7 @@ const data = [
     bColor: '#fff',
     linkTo: 'progress-steps',
   },
-  
+
   {
     id: 2,
     image: 'https://i.imgur.com/6XALxvvm.jpg',
@@ -30,6 +30,15 @@ const data = [
     info: 'A simple application that displays a set of birthdays from an API. ',
     bColor: '#fff',
     linkTo: 'fancy-counter',
+  },
+  {
+    id: 3,
+    image:
+      'https://www.greatfrontend.com/img/questions/mortgage-calculator/google-mortgage-calculator-example.png',
+    name: 'IntrestCalculator',
+    info: 'A simple application that displays a set of birthdays from an API. ',
+    bColor: '#fff',
+    linkTo: 'intrest-calculator',
   },
 ]
 export default function Container() {
@@ -66,8 +75,7 @@ export default function Container() {
                 key={id}
                 onClick={() => {
                   cardClickHandle(bColor, id)
-                }}
-              >
+                }}>
                 <img
                   src={image}
                   className='card-img-top imgDefault'
@@ -78,10 +86,7 @@ export default function Container() {
                   <h4 className='card-title'>
                     <Link to={`/${linkTo}`}>{name} </Link>
                   </h4>
-                  <div
-                    className='hLine'
-                    style={{ width: '5vw' }}
-                  >
+                  <div className='hLine' style={{ width: '5vw' }}>
                     <div className='hLineSub hLineSubDefault'></div>
                   </div>
                   <p className='card-text infoDefault'>{info}</p>

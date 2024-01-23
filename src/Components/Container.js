@@ -40,6 +40,15 @@ const data = [
     bColor: '#fff',
     linkTo: 'intrest-calculator',
   },
+  {
+    id: 4,
+    image:
+      'https://i.imgur.com/S6hyllm.gif',
+    name: 'BMI Calculator',
+    info: 'A simple application that displays a set of birthdays from an API. ',
+    bColor: '#fff',
+    linkTo: 'bmi-calculator',
+  },
 ]
 export default function Container() {
   const backgroundSet = (bColor) => {

@@ -1,0 +1,33 @@
+.bmi-title{
+    padding: 20px;
+    text-align: center;
+    background-color: seagreen;
+}
+.bmi-title h1{
+    color: white;
+}
+
+.bmi-window{
+    padding: 20px;
+    background-color: #344966;
+    border-radius: 10px;
+    margin: 20px;
+    width: 720px;
+}
+.bmi-slider{
+    width: 90%;
+    /* color: aliceblue; */
+    /* background-color: cadetblue; */
+    fill: white; /* Add this line to change the fill color */
+}
+
+.slider-title{
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+.bmi-result{
+    color: white;
+    text-align: center;
+    margin: 10px;
+}

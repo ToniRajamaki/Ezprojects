@@ -45,6 +45,14 @@ const data = [
     bColor: '#fff',
     linkTo: 'bmi-calculator',
   },
+  {
+    id: 5,
+    image: 'https://i.imgur.com/DxQtSMG.gif',
+    name: 'PROJECT',
+    info: 'An intuitive BMI calculator with visual indicators for different health categories.',
+    bColor: '#fff',
+    linkTo: 'test-project',
+  },
 ];
 
 

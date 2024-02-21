@@ -11,6 +11,7 @@ import ProgressSteps from './Projects/ProgressSteps'
 import FancyCounter from './Projects/FancyCounter'
 import IntrestCalculator from './Projects/IntrestCalculator'
 import BMIcalculator from './Projects/BMIcalculator'
+import TestProject from './Projects/TestProject'
 // import Footer from "./Components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -27,6 +28,7 @@ root.render(
         <Route exact path='/expanding-cards' element={<ExpandingCards />} />
         <Route exact path='/fancy-counter' element={<FancyCounter />} />
         <Route exact path='/bmi-calculator' element={<BMIcalculator />} />
+        <Route exact path='/test-project' element={<TestProject />} />
         <Route
           exact
           path='/intrest-calculator'

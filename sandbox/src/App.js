@@ -1,8 +1,8 @@
-import "./App.css";
-import Container from "./Components/Container";
+import './App.css'
+import Container from '../../src/Components/Container'
 
 function App() {
-  return <Container />;
+  return <Container />
 }
 
-export default App;
+export default App

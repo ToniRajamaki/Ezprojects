@@ -6,18 +6,14 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "src/App.js": true,
     ".gitignore": true,
-    "package-lock.json": true,
     "package.json": true,
     "README.md": true,
     "src/Components/Restaurant_src": true,
     "src/Components/Tours_src": true
   },
   "hide-files.files": [
-    "src/App.js",
     ".gitignore",
-    "package-lock.json",
     "package.json",
     "README.md",
     "src/Components/Restaurant_src",
